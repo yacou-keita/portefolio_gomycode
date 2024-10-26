@@ -1,7 +1,24 @@
 * {
     box-sizing: border-box;
-    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
     margin: 0;
     padding: 0;
     border: 0;
+    color: black;
+}
+
+nav {
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+ul {
+   display: flex; 
+   flex-direction: row;
+   gap: 2rem;
+   text-transform: lowercase;
 }
