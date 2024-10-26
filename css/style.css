@@ -8,8 +8,11 @@
     color: black;
 }
 
-nav {
+.border-bottom {
     border-bottom: 1px solid black;
+}
+
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,3 +25,18 @@ ul {
    gap: 2rem;
    text-transform: lowercase;
 }
+
+.profile  {
+   display: grid; 
+   grid-template-columns: 5fr 1fr;
+}
+
+.profile > div ,img {
+    padding: 2rem; 
+}
+
+.profile > div {
+    border-right: 1px solid black;
+}
+
+
