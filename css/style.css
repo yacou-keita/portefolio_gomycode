@@ -58,3 +58,25 @@ section h2 {
 #about>div > article > h1{
     padding-bottom: 1rem;
 }
+
+
+#work > div {
+    text-align: center;
+}
+
+#work > div > h2 {
+    padding-bottom: 0rem;
+}
+
+#work > article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 0
+}
+
+#work > article > div + div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
