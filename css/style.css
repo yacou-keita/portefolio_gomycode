@@ -80,3 +80,25 @@ section h2 {
     flex-direction: column;
     justify-content: space-between;
 }
+
+#resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+#resume > div > * {
+    text-align: left;
+}
+
+#resume a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: .5rem 4rem;
+    height: 3rem;
+    border-radius: 7px;
+}
