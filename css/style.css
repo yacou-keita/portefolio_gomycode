@@ -8,6 +8,16 @@
     color: black;
 }
 
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: .5rem 4rem;
+    height: 3rem;
+    border-radius: 7px;
+}
+
 .border-bottom {
     border-bottom: 1px solid black;
 }
@@ -102,3 +112,44 @@ section h2 {
     height: 3rem;
     border-radius: 7px;
 }
+
+#personal-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 2rem 0;
+}
+
+#personal-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+#personal-info div h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#personal-info div > small {
+    font-size: .9rem;
+    margin-bottom: .3rem;
+}
+
+#personal-info form {
+    width: 25rem;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+#personal-info form input,textarea{
+    border: 2px solid black;
+    width: 100%;
+    padding: .8rem 0 .8rem 1rem;
+    border-radius: 4px;
+}
+
+#personal-info form textarea {
+    resize: none;
+}
+
