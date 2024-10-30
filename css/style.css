@@ -1,3 +1,8 @@
+:root {
+    --black: black;
+}
+
+
 * {
     box-sizing: border-box;
     list-style-type: none;
@@ -5,22 +10,23 @@
     margin: 0;
     padding: 0;
     border: 0;
-    color: black;
+    color: var(--black);
 }
 
 button {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid var(--black);
     padding: .5rem 4rem;
     height: 3rem;
     border-radius: 7px;
 }
 
 .border-bottom {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--black);
 }
+
 
 nav {
     display: flex;
@@ -29,11 +35,15 @@ nav {
     padding: 1rem 2rem;
 }
 
-ul {
+nav ul {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     text-transform: lowercase;
+}
+
+nav .mobile-menu {
+    display: none;
 }
 
 .profile {
@@ -47,7 +57,7 @@ img {
 }
 
 .profile>div {
-    border-right: 1px solid black;
+    border-right: 1px solid var(--black);
 }
 
 section h2 {
@@ -58,7 +68,6 @@ section h2 {
 
 #about>div {
     display: grid;
-    flex-direction: row;
     padding: 2rem;
     grid-template-columns: 2fr 2fr 0fr;
     gap: 5rem;
@@ -85,7 +94,7 @@ section h2 {
     padding: 2rem 0
 }
 
-#work>article>div+div {
+#work .audio {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -107,7 +116,7 @@ section h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid var(--black);
     padding: .5rem 4rem;
     height: 3rem;
     border-radius: 7px;
@@ -138,7 +147,7 @@ section h2 {
 
 #personal-info form {
     width: 25rem;
-    border: 2px solid black;
+    border: 2px solid var(--black);
     padding: 1rem;
     gap: .5rem;
     display: flex;
@@ -147,7 +156,7 @@ section h2 {
 
 #personal-info form input,
 textarea {
-    border: 2px solid black;
+    border: 2px solid var(--black);
     width: 100%;
     padding: .8rem 0 .8rem 1rem;
     border-radius: 4px;
@@ -172,4 +181,72 @@ footer {
 
 footer div h2 {
     margin-bottom: 1rem;
+}
+
+/* mobile phone screen */
+@media screen and (max-width: 768px) {
+
+    nav ul {
+        display: none;
+    }
+
+    nav .mobile-menu {
+        display: flex;
+    }
+
+   
+    
+    .profile>div,
+    img {
+        padding: .5rem;
+    }
+
+    #about>div {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+
+    #work>article {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #work .audio {
+        gap: 1.5rem;
+    }
+
+    #resume {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem .5rem;
+    }
+
+    #resume>div>* {
+        text-align: center;
+    }
+
+    #personal-info {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #personal-info form {
+        width: 20rem;
+    }
+
+    footer {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+
 }
