@@ -65,27 +65,27 @@ section h2 {
     text-align: left;
 }
 
-#about>div > article > h1{
+#about>div>article>h1 {
     padding-bottom: 1rem;
 }
 
 
-#work > div {
+#work>div {
     text-align: center;
 }
 
-#work > div > h2 {
+#work>div>h2 {
     padding-bottom: 0rem;
 }
 
-#work > article {
+#work>article {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 2rem 0
 }
 
-#work > article > div + div {
+#work>article>div+div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -99,7 +99,7 @@ section h2 {
     padding: 2rem 0;
 }
 
-#resume > div > * {
+#resume>div>* {
     text-align: left;
 }
 
@@ -117,7 +117,7 @@ section h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
     padding: 2rem 0;
 }
 
@@ -131,18 +131,22 @@ section h2 {
     margin-bottom: 1rem;
 }
 
-#personal-info div > small {
+#personal-info div>small {
     font-size: .9rem;
     margin-bottom: .3rem;
 }
 
 #personal-info form {
     width: 25rem;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 1rem;
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
 }
 
-#personal-info form input,textarea{
+#personal-info form input,
+textarea {
     border: 2px solid black;
     width: 100%;
     padding: .8rem 0 .8rem 1rem;
@@ -153,3 +157,7 @@ section h2 {
     resize: none;
 }
 
+#personal-info form button {
+    width: 25%;
+    align-self: flex-end;
+}
