@@ -161,3 +161,15 @@ textarea {
     width: 25%;
     align-self: flex-end;
 }
+
+footer {
+    padding: 4rem 9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div h2 {
+    margin-bottom: 1rem;
+}
