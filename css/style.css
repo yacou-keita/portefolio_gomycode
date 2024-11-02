@@ -1,5 +1,6 @@
 :root {
     --black: black;
+    --white:#eee;
 }
 
 
@@ -44,7 +45,36 @@ nav ul {
 
 nav .mobile-menu {
     display: none;
+    cursor: pointer;
 }
+
+aside {
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    background-color: var(--white);
+    padding: 1rem 0;
+    height: fit-content;
+    width: 50%;
+    box-shadow: 3px 3px 8px var(--black);
+    font-size: 1.1rem;
+}
+aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+aside ul > li {
+    padding: .5rem;
+}
+
+aside ul > li:hover {
+background-color: var(--black);
+cursor: pointer;
+color: var(--white);
+}
+
 
 .profile {
     display: grid;
@@ -201,7 +231,9 @@ footer ul {
         display: flex;
     }
 
-   
+    aside {
+        display: block;
+    }
     
     .profile>div,
     img {
