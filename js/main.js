@@ -6,22 +6,22 @@ const DESACTIVE = "desactive"
 
 
 button.addEventListener("click", () => {
-    const getClassNames = sideBar.classList
-    const isDesactive = getClassNames.contains(DESACTIVE)
+    const classNames = sideBar.classList
+    const isDesactive = classNames.contains(DESACTIVE)
     if(isDesactive){
-        activeSideBar(getClassNames)
+        activeSideBar(classNames)
     }else{
-        desactiveSideBar(getClassNames)
+        desactiveSideBar(classNames)
     }
     
 })
 
-function activeSideBar(getClassNames) {
-    getClassNames.remove(DESACTIVE)
-    getClassNames.add(ACTIVE)
+function activeSideBar(classNames) {
+    classNames.remove(DESACTIVE)
+    classNames.add(ACTIVE)
 }
 
-function desactiveSideBar(getClassNames) {
-    getClassNames.remove(ACTIVE)
-    getClassNames.add(DESACTIVE)
+function desactiveSideBar(classNames) {
+    classNames.remove(ACTIVE)
+    classNames.add(DESACTIVE)
 }
