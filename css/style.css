@@ -49,7 +49,6 @@ nav .mobile-menu {
 }
 
 aside {
-    display: none;
     position: absolute;
     top: 2.5rem;
     right: 0;
@@ -60,6 +59,14 @@ aside {
     box-shadow: 3px 3px 8px var(--black);
     font-size: 1.1rem;
 }
+
+.active {
+    visibility:visible;
+}
+.desactive {
+    visibility: hidden;
+}
+
 aside ul {
     display: flex;
     flex-direction: column;
@@ -229,10 +236,6 @@ footer ul {
 
     nav .mobile-menu {
         display: flex;
-    }
-
-    aside {
-        display: block;
     }
     
     .profile>div,
